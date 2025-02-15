@@ -53,8 +53,8 @@ class PackageServiceProvider extends ServiceProvider
             return new TranslationManager(
                 app(Translator::class),
                 app(Filesystem::class),
-                new Finder(),
-                new Parser()
+                new Finder,
+                new Parser
             );
         });
 
